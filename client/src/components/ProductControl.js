@@ -77,14 +77,18 @@ class ProductControl extends Component {
         };
     }
     
-    componentDidMount(){
-        axios.get('http://localhost:5000/api/products')
-            .then(res =>{
-                console.log(res)
-                this.setState({
-                    actualProductList: res.data
-                })
+    componentDidMount() {
+        // In here backend need to be with env
+        axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/products`)
+            .then(res => {
+            console.log(res);
+            this.setState({
+                actualProductList: res.data
+            });
             })
+            .catch(error => {
+            console.log(error);
+            });
     }
     handleEditProductClick = () =>{
         console.log('HandleEditClick reached!!')
