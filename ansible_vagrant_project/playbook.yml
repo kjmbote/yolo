@@ -1,0 +1,39 @@
+---
+- name: Setup and deploy application
+  hosts: all
+  become: yes
+
+  vars:
+    app_repo: "https://github.com/kjmbote/yolo"
+
+  roles:
+    - docker
+
+  tasks:
+    - name: Ensure system is updated
+      apt:
+        update_cache: yes
+        upgrade: dist
+
+    - name: Install dependencies
+      apt:
+        name:
+          - git
+          - python3-pip
+          - python3-apt
+        state: present
+
+    - name: Install Docker Compose
+      pip:
+        name: docker-compose
+        state: present
+
+    - name: Clone application repository
+      git:
+        repo: "{{ app_repo }}"
+        dest: /home/vagrant/app
+
+    - name: Run Docker Compose
+      command: docker-compose up -d
+      args:
+        chdir: /home/vagrant/app
