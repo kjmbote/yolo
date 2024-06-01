@@ -22,7 +22,7 @@ jobs:
 
       - name: Build and push backend image to Docker Hub
         run: |
-          cd client
+          cd backend
           docker build \
             -t $DOCKER_USERNAME/backend:${{ steps.commit_hash.outputs.hash }} \
             .
