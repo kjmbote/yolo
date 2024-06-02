@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: frontend-container
-          image: kevjmbote/client:ff93b2b
+          image: kevjmbote/client:25fc153
           ports:
             - containerPort: 80
           env:
