@@ -79,7 +79,7 @@ class ProductControl extends Component {
     
     componentDidMount() {
         // In here backend need to be with env
-        axios.get(`http://backend-service:5000/api/products`)
+        axios.get('http://backend-service:5000/api/products')
             .then(res => {
             console.log(res);
             this.setState({
