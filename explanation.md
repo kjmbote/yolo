@@ -65,3 +65,11 @@
 - **Commit Messages:** Clear and descriptive commit messages are used to document the changes made in each commit, facilitating easier tracking of progress and changes.
 - **Pull Requests:** Changes are merged into the main branch via pull requests, which are reviewed and approved by team members to ensure code quality and consistency.
 - **Continuous Integration:** Automated tests are run on each pull request to ensure that new changes do not break existing functionality.
+
+- ### 6. Screengrab of the Docker
+- ![image](https://github.com/kjmbote/yolo/assets/16819296/9a01cd58-6eeb-4a2b-b57e-b430e8577c19)
+
+- 
+-
+
+- 
