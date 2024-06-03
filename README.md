@@ -1,3 +1,7 @@
+## live link to the project : 
+ [http://35.222.75.126/] or [https://frontends-c50fd8ac222d.herokuapp.com/]
+
+
 # Requirements
 Make sure that you have the following installed:
 - [node](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-18-04) 
@@ -20,4 +24,4 @@ Make sure that you have the following installed:
 
  `npm start`
 
- ### Go ahead a nd add a product (note that the price field only takes a numeric input)
+ 
